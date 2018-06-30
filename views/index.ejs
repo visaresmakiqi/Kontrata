@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contract</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script>
+	function clear()
+	{
+		document.getElementById("myform").reset();
+	}
+
+	</script>
+</head>
+<body>
+  <div class="container">
+    <form method='POST' action='/kontrata/add' id='myform'>
+<div class= "row justify-content-center">
+  <div class="col-md-8">
+         <h4><b>Shto kontraten e re</b></h4>
+<br>
+  <h5> Prokurorimi:</h5><br>
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-4">
+      Nr rendor i prokurimit: <br>
+      <input type="text" class="form-control" name="nrrendor" placeholder="Nr rendor i prokurimit"><br>
+  </div>
+  <div class="col-md-4">
+      Lloji i prokurimit:<br>
+      <input type="text" class="form-control" name="lloji" placeholder="Lloji i prokurimit">
+  </div>
+</div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      Aktiviteti i prokurimit:<br>
+      <input type="text" class="form-control" name="aktiviteti" placeholder="Nr rendor i prokurimit">
+<br>
+</div>
+</div>
+
+
+<div class="row justify-content-center">
+  <div class="col-md-8">
+<h5>Datat:</h5><br>
+</div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-4">
+      Data e inicimit te sktiviteit te prokurimit: <br>
+      <input type="text" class="form-control" name="nrrendor" placeholder="01.01.1111"><br>
+  </div>
+  <div class="col-md-4">
+      Data e publikimit te shpalljes:<br>
+      <input type="text" class="form-control" name="lloji" placeholder="01.01.1111">
+  </div>
+</div>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+    Data e nenshkrimit te kontrates:<br>
+      <input type="text" class="form-control" name="aktiviteti" placeholder="01.01.1111"><br>
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-4">
+    Afatet per implementimin e kontrates:
+    <input type="text" class="form-control" name="implementimi" placeholder="01.01.1111"><br>
+</div>
+<div class="col-md-4">
+   <br>
+  <input type="text" class="form-control" name="aktiviteti" placeholder="01.01.1111">
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8">
+  Data e permbylljes se kontrates(data e pranimit te perkohshem/preliminar):<br>
+    <input type="text" class="form-control" name="permbyllja" placeholder="01.01.1111"><br>
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8">
+<h5>Cmimi dhe te dhenat tjera: </h5><br><br>
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-4">
+      Cmimi i kontrates (duke i perfshire taksat): <br>
+      <input type="text" class="form-control" name="cmimi" placeholder="Cmimi i Kontrates"><br>
+  </div>
+  <div class="col-md-4">
+      Cmimi total i paguar per kontrat:<br>
+      <input type="text" class="form-control" name="total" placeholder="Cmimi Total">
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8">
+  Emri i personit te cilit i eshte dhene kontrata:<br>
+    <input type="text" class="form-control" name="emri" placeholder="Emri dhe Mbiemri"><br>
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-8">
+<a href='/kontrata/add'> <button type="submit" class="btn btn-primary" style="width:49%" >DERGO</button>
+<button type="reset" value="Reset" class="btn btn-secondary" style="width:49%">FSHIJ</button><br><br>
+
+</div>
+</div>
+</form>
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
